@@ -1,8 +1,8 @@
-const userName = "Can";
+//const userName = "Can";
 //userName = 'can' --> const değeri değiştirilemez.
-let age = 29;
+// let age = 29;
 
-age = 30;
+// age = 30;
 
 // function add(a: number, b: number){
 //     var result;
@@ -46,7 +46,7 @@ const activeHobbies = ["Hiking"];
 activeHobbies.push(...hobbies);
 
 const person = {
-  name: "Can",
+  firstName: "Can",
   age: 29,
 };
 
@@ -67,3 +67,13 @@ const add = (...numbers: number[]) => {
 
 const addedNumbers = add(5, 10, 2, 3.7);
 console.log(addedNumbers);
+
+const [hobby1, hobby2, ...remainingHobbies] = hobbies;
+
+console.log(hobbies,hobby1,hobby2);
+
+const {firstName:userName, age} = person;
+
+console.log(userName, age, person);
+
+
