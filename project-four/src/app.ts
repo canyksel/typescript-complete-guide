@@ -22,7 +22,11 @@ class Department {
   }
 }
 
-const accounting = new Department("d1", "Accounting");
+
+class ITDepartment extends Department {
+
+}
+const accounting = new ITDepartment("d1", "Accounting");
 
 accounting.addEmployee("Can");
 accounting.addEmployee("Test");
